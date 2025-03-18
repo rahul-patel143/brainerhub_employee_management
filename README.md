@@ -11,15 +11,15 @@ This project is a Django-based REST API that allows users to:
 - **Backend**: Django, Django REST Framework (DRF)
 - **Database**: PostgreSQL
 - **Libraries**: Pandas (for Excel/CSV processing), DRF-YASG (Swagger API docs)
-- **Tools**: Docker (optional for database setup), Virtual Environment
+- **Tools**: Virtual Environment
 
 ---
 
 ## 🔧 Setup Instructions
 ### 1️⃣ Clone the Repository
 ```bash
-git clone <repository-url>
-cd <project-folder>
+git clone https://github.com/rahul-patel143/brainerhub_employee_management.git
+cd brainerhub_employee_management
 ```
 
 ### 2️⃣ Set Up a Virtual Environment
@@ -51,6 +51,7 @@ DATABASES = {
 
 ### 5️⃣ Apply Migrations
 ```bash
+python manage.py makemigrations
 python manage.py migrate
 ```
 
@@ -58,7 +59,7 @@ python manage.py migrate
 ```bash
 python manage.py runserver
 ```
-The API will be accessible at: `http://127.0.0.1:8000/`
+The API will be accessible at: `http://127.0.0.1:8000/api/`
 
 ### 7️⃣ Access Swagger API Docs
 Swagger UI for API testing is available at:
@@ -92,11 +93,11 @@ http://127.0.0.1:8000/api/docs
         "employee_id": 198,
         "first_name": "Donald",
         "last_name": "OConnell",
-        "phone_number": "650.507.9833",
+        "phone_number": "123.456.7890",
         "salary": 2600.00,
         "manager_id": 100,
         "department_id": 1,
-        "company_name": "SH_CLERK"
+        "company_name": "AMAZON"
     }
 ]
 ```
@@ -111,11 +112,11 @@ http://127.0.0.1:8000/api/docs
     "employee_id": 198,
     "first_name": "Donald",
     "last_name": "OConnell",
-    "phone_number": "650.507.9833",
+    "phone_number": "123.456.7890",
     "salary": 2600.00,
     "manager_id": 100,
     "department_id": 1,
-    "company_name": "SH_CLERK"
+    "company_name": "AMAZON"
 }
 ```
 
